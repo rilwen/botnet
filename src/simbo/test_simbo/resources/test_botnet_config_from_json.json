@@ -1,0 +1,64 @@
+{
+	"dropper": {
+		"max_infected_release": [],
+		"setting_up_period": 60
+	},
+	"payload": {
+		"xs": [1, 2],
+		"ys": [
+			{
+				"infectious_emails_sent_per_second_per_bot": 0.05,
+				"ping_interval": {
+					"by_wall_clock": false,
+					"period":300.0
+				},
+				"ping_at_start": true,
+				"reconfiguration_interval": {
+					"by_wall_clock": true,
+					"period": 3600.0
+				},
+				"reconfigure_at_start": false,
+				"min_detecting_av_release": {
+					"AV": 1
+				}
+			},
+			{
+				"infectious_emails_sent_per_second_per_bot": 0.1,
+				"ping_interval": {
+					"by_wall_clock": false,
+					"period":300.0
+				},
+				"ping_at_start": true,
+				"reconfiguration_interval": {
+					"by_wall_clock": true,
+					"period": 3600.0
+				},
+				"reconfigure_at_start": false,
+				"min_detecting_av_release": {}
+			}
+		]
+	},
+	"bot_state_weights": {
+		"xs": ["2018-01-01", "2018-01-02"],
+		"ys": [
+			{
+				"values": ["PROPAGATING", "WORKING", "DORMANT"],
+				"weights": [0.2, 0.5, 0.3]
+			},
+			{
+				"values": ["PROPAGATING", "WORKING", "DORMANT"],
+				"weights": [0.05, 0.8, 0.15]
+			}
+		]
+	},
+	"email_address_list_size": 2000,
+	"infectious_email_sent_per_second_by_command_centre": {
+		"xs": ["2018-08-01", "2018-08-02"], 
+		"ys": [100, 0]
+	},
+	"probability_of_reconfiguration":0.1,
+	"payload_release_schedule": {
+		"xs": ["2018-01-01", "2018-01-02"],
+		"ys": [1, 2]
+	}
+}

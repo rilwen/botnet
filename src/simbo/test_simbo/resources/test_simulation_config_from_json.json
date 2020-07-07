@@ -1,0 +1,258 @@
+{
+	"local_network_configs":[
+		{
+			"typ": "HOUSEHOLD",
+			"count": 750,
+			"sysadmin_config": {
+				"maintenance_triggers": {
+					"weights": [0.8, 0.2],
+					"values": [
+						{
+							"base_process": {"type": "poisson", "subtype": "simple", "params": {"inverse_lambda": {"hours": 168}}},
+							"pause_length": {"hours": 168}
+						},
+						{
+							"base_process": {"type": "poisson", "subtype": "simple", "params": {"inverse_lambda": {"hours": 24}}},
+							"pause_length": {"hours": 24}
+						}
+					]
+				}
+			},
+			"fixed_hosts": [
+				["DESKTOP", [{
+					"operating_system": {"weights":[1],"values":[[["WINDOWS", 7], 12]]},
+					"antivirus": [
+						[["WINDOWS", 7], {"weights": [0.8, 0.2], "values": [["McCoffeeAV", 1], ["KGBTote", 1]]}]
+					]
+				}, 1]]
+			],
+			"allowed_users": ["OFFICE_WORKER"],
+			"country": 1
+		},
+		{
+			"typ": "HOUSEHOLD",
+			"count": 200,
+			"sysadmin_config": {
+				"maintenance_triggers": {
+					"weights": [0.8, 0.2],
+					"values": [
+						{
+							"base_process": {"type": "poisson", "subtype": "simple", "params": {"inverse_lambda": {"hours": 168}}},
+							"pause_length": {"hours": 168}
+						},
+						{
+							"base_process": {"type": "poisson", "subtype": "simple", "params": {"inverse_lambda": {"hours": 24}}},
+							"pause_length": {"hours": 24}
+						}
+					]
+				}
+			},
+			"fixed_hosts": [
+				["DESKTOP", [{
+					"operating_system": {"weights":[1],"values":[[["WINDOWS", 7], 12]]},
+					"antivirus": [
+						[["WINDOWS", 7], {"weights": [0.8, 0.2], "values": [["McCoffeeAV", 1], ["KGBTote", 1]]}]
+					]
+				}, 2]]
+			],
+			"allowed_users": ["OFFICE_WORKER"],
+			"country": 1
+		},
+		{
+			"typ": "HOUSEHOLD",
+			"count": 50,
+			"sysadmin_config": {
+				"maintenance_triggers": {
+					"weights": [0.8, 0.2],
+					"values": [
+						{
+							"base_process": {"type": "poisson", "subtype": "simple", "params": {"inverse_lambda": {"hours": 168}}},
+							"pause_length": {"hours": 168}
+						},
+						{
+							"base_process": {"type": "poisson", "subtype": "simple", "params": {"inverse_lambda": {"hours": 24}}},
+							"pause_length": {"hours": 24}
+						}
+					]
+				}
+			},
+			"fixed_hosts": [
+				["DESKTOP", [{
+					"operating_system": {"weights":[1],"values":[[["WINDOWS", 7], 12]]},
+					"antivirus": [
+						[["WINDOWS", 7], {"weights": [0.8, 0.2], "values": [["McCoffeeAV", 1], ["KGBTote", 1]]}]
+					]
+				}, 3]]
+			],
+			"allowed_users": ["OFFICE_WORKER"],
+			"country": 1
+		},
+		{
+			"typ": "CORPORATE",
+			"count": 20,
+			"sysadmin_config": {
+				"maintenance_triggers": {
+					"weights": [1],
+					"values": [{
+							"base_process": {"type": "poisson", "subtype": "simple", "params": {"inverse_lambda": {"hours": 24}}},
+							"pause_length": {"hours": 24}
+						}]
+				}
+			},
+			"fixed_hosts": [
+				["DESKTOP", [{
+					"operating_system": {"weights":[0.9, 0.1],"values":[[["WINDOWS", 10], 4], [["LINUX", 24], 5]]},
+					"antivirus": [
+						[["WINDOWS", 10], {"weights": [0.95, 0.05], "values": [["McCoffeeAV", 1], ["KGBTote", 1]]}]
+					]
+				}, 95]],
+				["SERVER", [{
+					"operating_system": {"weights":[0.5, 0.5],"values":[[["WINDOWS", 10], 4], [["LINUX", 24], 5]]},
+					"antivirus": [
+						[["WINDOWS", 10], {"weights": [0.95, 0.05], "values": [["McCoffeeAV", 1], ["KGBTote", 1]]}]
+					]
+				}, 5]]
+			],
+			"allowed_users": ["OFFICE_WORKER"],
+			"country": 1
+		}
+	],
+	"random_seed":3423423,
+	"public_connections_config":{
+		"min_ip_address":"192.168.0.1",
+		"max_ip_address":"192.168.0.255",
+		"dynamic_ip_lifetime":80000
+	},
+	"email_config": {
+		"filtering_efficiency": {
+			"houli": 0.9999,
+			"pied_piper": 0.8
+		},
+		"personal_email_provider": {
+			"weights": [0.8, 0.2],
+			"values": ["houli", "pied_piper"]
+		},
+		"corporate_email_provider": {
+			"weights": [0.99, 0.01],
+			"values": ["houli", "pied_piper"]
+		}
+	},
+	"users_config": {
+		"laptop_config": {
+			"operating_system": {
+				"values": [[["WINDOWS", 10], 4]],
+				"weights": [1]
+			},
+			"antivirus": [
+					[["WINDOWS", 10], {"weights": [0.8, 0.18, 0.02], "values": [["McCoffeeAV", 1], ["KGBTote", 1], ["", 0]]}]
+				]
+		},
+		"laptop_sysadmin_config": {
+			"maintenance_triggers": {
+				"weights": [0.7, 0.3],
+				"values": [
+					{
+						"base_process": {"type": "poisson", "subtype": "simple", "params": {"inverse_lambda": {"hours": 168}}},
+						"pause_length": {"hours": 168}
+					},
+					{
+						"base_process": {"type": "poisson", "subtype": "simple", "params": {"inverse_lambda": {"hours": 24}}},
+						"pause_length": {"hours": 24}
+					}
+				]
+			}
+		},
+		"users": {
+			"OFFICE_WORKER": {
+				"count": 1500,
+				"environments": ["HOME", "OFFICE", "NONE"],
+				"environment_process": {
+					"type": "semi_predetermined",
+					"subtype": "seasonal_weekly",
+					"params": {
+						"deterministic_periods_workdays": [[{"hours": 0}, {"hours": 8, "minutes": 45}], [{"hours": 9, "minutes": 10}, {"hours": 17, "minutes": 50}], [{"hours": 18}, {"hours": 19}], [{"hours": 20}, {"hours": 22}], [{"hours": 23}, {"hours": 23, "minutes": 59, "seconds": 59}]],
+						"deterministic_values_workdays": [2, 1, 2, 0, 2],
+						"deterministic_periods_weekend": [[{"hours": 0}, {"hours": 10}], [{"hours": 11}, {"hours": 21}], [{"hours": 23}, {"hours": 23, "minutes": 59, "seconds": 59}]],
+						"deterministic_values_weekend": [2, 0, 2]
+					}
+				},
+				"uses_laptop": false,
+				"personal_email_environments": ["HOME", "OFFICE"],
+				"work_email_environments": ["OFFICE"],					
+				"probability_email_activated": 0.4,
+				"initial_email_opening_probability": 0.8,
+				"email_opening_probability_multiplier_exponent": 2,
+				"probability_instant_email_check": 0.75,
+				"personal_email_check_process": {
+					"type": "poisson",
+					"subtype": "simple",
+					"params": {
+						"inverse_lambda": {"minutes": 30}
+					}
+				},
+				"work_email_check_process": {
+					"type": "poisson",
+					"subtype": "seasonal_weekly",
+					"params": {
+						"workday_lambdas": [0.001],
+						"weekend_lambdas": [0]
+					}
+				}
+			}
+		}
+	},
+	"operating_system_vendors_config": {
+		"vendors": {
+			"Miko-Sofcik": {
+				"release_schedules": [
+					[["WINDOWS", 7], {
+						"xs": ["2018-01-01", "2018-06-01"],
+						"ys": [12, 13]
+					}],
+					[["WINDOWS", 8], {
+						"xs": ["2018-01-01", "2018-06-01"],
+						"ys": [6, 7]
+					}],
+					[["WINDOWS", 10], {
+						"xs": ["2018-01-01", "2018-06-01"],
+						"ys": [4, 5]
+					}]
+				]
+			},
+			"Tux Ltd": {
+				"release_schedules": [
+					[["LINUX", 24], {
+						"xs": ["2018-01-01", "2018-06-01"],
+						"ys": [5, 6]
+					}]
+				]
+			}
+		}
+	},
+	"antiviruses_config": {
+		"vendors": {
+			"McCoffee": {
+				"release_schedules": {"McCoffeeAV": {"xs": ["2018-01-01"], "ys": [1]}}
+			},
+			"KGBLabs": {
+				"release_schedules": {"KGBTote": {"xs": ["2018-01-01", "2018-06-01"], "ys": [1, 2]}}
+			}
+		},
+		"antiviruses": {
+			"McCoffeeAV": {
+				"infection_attempt_detection_probability": 0.4,
+				"update_at_startup": false,
+				"scan_at_startup": false,
+				"scan_after_update": false,
+				"scan_interval": {"hours": 24}
+			},
+			"KGBTote": {
+				"infection_attempt_detection_probability": 0.1,
+				"update_at_startup": true,
+				"scan_at_startup": true,
+				"scan_after_update": true,
+				"scan_interval": {"hours": 24}
+			}
+		}
+	}
+}

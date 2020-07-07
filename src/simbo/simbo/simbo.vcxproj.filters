@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\date_time">
+      <UniqueIdentifier>{8968a365-158d-45a7-a023-76e1a5bfca6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\date_time">
+      <UniqueIdentifier>{e51e7f0f-d13a-47a1-b6d6-e8ddaafda468}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\interpolation">
+      <UniqueIdentifier>{4f2dcfaf-3775-47db-b846-5ea1c1593731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\random">
+      <UniqueIdentifier>{6daa5926-6e66-42dc-b3a6-0912a997d386}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\random">
+      <UniqueIdentifier>{c5dfcd5f-caa6-423b-9619-9c53c0a70faa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\random_processes">
+      <UniqueIdentifier>{1fba2c04-a4b7-473a-afe2-25ebddf5a554}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\random_processes">
+      <UniqueIdentifier>{43a845b5-3edb-4d4c-8943-da11fd5b71f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\random_variables">
+      <UniqueIdentifier>{326f61fe-6844-4cf0-906a-1409829a72d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\random_variables">
+      <UniqueIdentifier>{f37d98d3-b6cd-4ec9-8336-05a2219be6a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\public_connection">
+      <UniqueIdentifier>{eb77ff5e-4d43-4ebf-b6d6-29cfb6d9343a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ip_addresses">
+      <UniqueIdentifier>{77248ef7-fde6-416c-8ff6-7e00f407a3e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ip_addresses">
+      <UniqueIdentifier>{aa6dfbf1-98dd-4c7f-9085-1e97dcd7ccbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hosts">
+      <UniqueIdentifier>{3ac5c9fe-7aad-49ce-83fc-2734a2b0a913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\public_connection">
+      <UniqueIdentifier>{0554abd2-bc6c-4152-ba3c-b0f2da90451c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\email">
+      <UniqueIdentifier>{0ea1ec15-b2d7-43bd-a881-b8c127b01ebb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\email">
+      <UniqueIdentifier>{ded930be-b8b9-4074-8c43-7f3ea559dacf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hosts">
+      <UniqueIdentifier>{2686abe4-d8e7-4905-8516-7f59ec0bfaf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\networks">
+      <UniqueIdentifier>{a5b11d09-2859-4af8-afd7-6631f42e2bc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\botnet">
+      <UniqueIdentifier>{24d026ef-10aa-43fc-b395-15fb580f83df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\botnet">
+      <UniqueIdentifier>{0ff2a41a-12d8-447b-a335-45e6438db7c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\networks">
+      <UniqueIdentifier>{24822abc-0ebd-410a-b184-b8ac90208e56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core">
+      <UniqueIdentifier>{fbcd5be3-5893-472a-bcf8-6f251da3f0c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core">
+      <UniqueIdentifier>{ac895206-789b-4f5e-9cdc-bffc6fa59d1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\simulation">
+      <UniqueIdentifier>{291d5071-56e9-4dd3-8605-4f4d9242b6f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\simulation">
+      <UniqueIdentifier>{d4205369-6497-4d66-8202-d53050fc3955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\users">
+      <UniqueIdentifier>{667a84b1-2ede-4a6e-bd4b-ccd34539f0ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\users">
+      <UniqueIdentifier>{9b6ff1f1-998c-47f0-b228-6cb5c3ddbe1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\software">
+      <UniqueIdentifier>{289dbf6d-ee7b-47ad-8d43-97c1a0dddaaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\software">
+      <UniqueIdentifier>{307de8b5-e932-41c7-8a2f-fa072dfe1d3e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="date_time.hpp">
+      <Filter>Header Files\date_time</Filter>
+    </ClInclude>
+    <ClInclude Include="schedule.hpp">
+      <Filter>Header Files\date_time</Filter>
+    </ClInclude>
+    <ClInclude Include="operating_system.hpp">
+      <Filter>Header Files\software</Filter>
+    </ClInclude>
+    <ClInclude Include="windows.hpp">
+      <Filter>Header Files\software</Filter>
+    </ClInclude>
+    <ClInclude Include="unix.hpp">
+      <Filter>Header Files\software</Filter>
+    </ClInclude>
+    <ClInclude Include="linux.hpp">
+      <Filter>Header Files\software</Filter>
+    </ClInclude>
+    <ClInclude Include="macos.hpp">
+      <Filter>Header Files\software</Filter>
+    </ClInclude>
+    <ClInclude Include="android.hpp">
+      <Filter>Header Files\software</Filter>
+    </ClInclude>
+    <ClInclude Include="interpolator1d.hpp">
+      <Filter>Header Files\interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="piecewise_constant_interpolator1d.hpp">
+      <Filter>Header Files\interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="rng.hpp">
+      <Filter>Header Files\random</Filter>
+    </ClInclude>
+    <ClInclude Include="rng_impl.hpp">
+      <Filter>Header Files\random</Filter>
+    </ClInclude>
+    <ClInclude Include="host.hpp">
+      <Filter>Header Files\hosts</Filter>
+    </ClInclude>
+    <ClInclude Include="desktop.hpp">
+      <Filter>Header Files\hosts</Filter>
+    </ClInclude>
+    <ClInclude Include="mobile_host.hpp">
+      <Filter>Header Files\hosts</Filter>
+    </ClInclude>
+    <ClInclude Include="laptop.hpp">
+      <Filter>Header Files\hosts</Filter>
+    </ClInclude>
+    <ClInclude Include="linear_interpolator1d.hpp">
+      <Filter>Header Files\interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="markov_process.hpp">
+      <Filter>Header Files\random_processes</Filter>
+    </ClInclude>
+    <ClInclude Include="brownian_motion.hpp">
+      <Filter>Header Files\random_processes</Filter>
+    </ClInclude>
+    <ClInclude Include="poisson_process.hpp">
+      <Filter>Header Files\random_processes</Filter>
+    </ClInclude>
+    <ClInclude Include="monotonic_interpolator1d.hpp">
+      <Filter>Header Files\interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="monotonic_linear_interpolator1d.hpp">
+      <Filter>Header Files\interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="interpolator1d_impl.hpp">
+      <Filter>Header Files\interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="indexed_interpolator1d.hpp">
+      <Filter>Header Files\interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="cycle.hpp">
+      <Filter>Header Files\random</Filter>
+    </ClInclude>
+    <ClInclude Include="random_variable.hpp">
+      <Filter>Header Files\random_variables</Filter>
+    </ClInclude>
+    <ClInclude Include="discrete_random_variable.hpp">
+      <Filter>Header Files\random_variables</Filter>
+    </ClInclude>
+    <ClInclude Include="discrete_markov_process_discrete_time.hpp">
+      <Filter>Header Files\random_processes</Filter>
+    </ClInclude>
+    <ClInclude Include="predetermined_process.hpp">
+      <Filter>Header Files\random_processes</Filter>
+    </ClInclude>
+    <ClInclude Include="semi_predetermined_process.hpp">
+      <Filter>Header Files\random_processes</Filter>
+    </ClInclude>
+    <ClInclude Include="conditional_markov_process.hpp">
+      <Filter>Header Files\random_processes</Filter>
+    </ClInclude>
+    <ClInclude Include="conditional_markov_process_impl.hpp">
+      <Filter>Header Files\random_processes</Filter>
+    </ClInclude>
+    <ClInclude Include="constant_process.hpp">
+      <Filter>Header Files\random_processes</Filter>
+    </ClInclude>
+    <ClInclude Include="jump_markov_process.hpp">
+      <Filter>Header Files\random_processes</Filter>
+    </ClInclude>
+    <ClInclude Include="autoscaled_poisson_process.hpp">
+      <Filter>Header Files\random_processes</Filter>
+    </ClInclude>
+    <ClInclude Include="public_connection.hpp">
+      <Filter>Header Files\public_connection</Filter>
+    </ClInclude>
+    <ClInclude Include="public_connection_static_address.hpp">
+      <Filter>Header Files\public_connection</Filter>
+    </ClInclude>
+    <ClInclude Include="simple_poisson_process.hpp">
+      <Filter>Header Files\random_processes</Filter>
+    </ClInclude>
+    <ClInclude Include="simple_autoscaled_poisson_process.hpp">
+      <Filter>Header Files\random_processes</Filter>
+    </ClInclude>
+    <ClInclude Include="ip_address.hpp">
+      <Filter>Header Files\ip_addresses</Filter>
+    </ClInclude>
+    <ClInclude Include="public_connection_dynamic_address.hpp">
+      <Filter>Header Files\public_connection</Filter>
+    </ClInclude>
+    <ClInclude Include="host_factory.hpp">
+      <Filter>Header Files\hosts</Filter>
+    </ClInclude>
+    <ClInclude Include="ip_address_pool.hpp">
+      <Filter>Header Files\ip_addresses</Filter>
+    </ClInclude>
+    <ClInclude Include="unique_ip_address_pool.hpp">
+      <Filter>Header Files\ip_addresses</Filter>
+    </ClInclude>
+    <ClInclude Include="fixed_host.hpp">
+      <Filter>Header Files\hosts</Filter>
+    </ClInclude>
+    <ClInclude Include="email_provider.hpp">
+      <Filter>Header Files\email</Filter>
+    </ClInclude>
+    <ClInclude Include="email_account.hpp">
+      <Filter>Header Files\email</Filter>
+    </ClInclude>
+    <ClInclude Include="markov_process_state.hpp">
+      <Filter>Header Files\random_processes</Filter>
+    </ClInclude>
+    <ClInclude Include="cast_markov_process.hpp">
+      <Filter>Header Files\random_processes</Filter>
+    </ClInclude>
+    <ClInclude Include="pausing_jump_markov_process.hpp">
+      <Filter>Header Files\random_processes</Filter>
+    </ClInclude>
+    <ClInclude Include="sysadmin.hpp">
+      <Filter>Header Files\hosts</Filter>
+    </ClInclude>
+    <ClInclude Include="internet_service_provider.hpp">
+      <Filter>Header Files\public_connection</Filter>
+    </ClInclude>
+    <ClInclude Include="local_network.hpp">
+      <Filter>Header Files\networks</Filter>
+    </ClInclude>
+    <ClInclude Include="network_admin.hpp">
+      <Filter>Header Files\networks</Filter>
+    </ClInclude>
+    <ClInclude Include="activity_state.hpp">
+      <Filter>Header Files\hosts</Filter>
+    </ClInclude>
+    <ClInclude Include="infection_state.hpp">
+      <Filter>Header Files\hosts</Filter>
+    </ClInclude>
+    <ClInclude Include="bot_state.hpp">
+      <Filter>Header Files\botnet</Filter>
+    </ClInclude>
+    <ClInclude Include="markov_switcher.hpp">
+      <Filter>Header Files\random_processes</Filter>
+    </ClInclude>
+    <ClInclude Include="botnet_config.hpp">
+      <Filter>Header Files\botnet</Filter>
+    </ClInclude>
+    <ClInclude Include="botnet.hpp">
+      <Filter>Header Files\botnet</Filter>
+    </ClInclude>
+    <ClInclude Include="action_interval.hpp">
+      <Filter>Header Files\botnet</Filter>
+    </ClInclude>
+    <ClInclude Include="tracked_value_own_time.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="timestamped_value.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="tracked_value.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="passkey.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="own_time_counter.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="const_view.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="exceptions.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="managed_object.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="object_manager.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="sinkhole.hpp">
+      <Filter>Header Files\botnet</Filter>
+    </ClInclude>
+    <ClInclude Include="operating_system_type.hpp">
+      <Filter>Header Files\software</Filter>
+    </ClInclude>
+    <ClInclude Include="log.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="json.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="json_fwd.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="simulation_controller.hpp">
+      <Filter>Header Files\simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="id.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="context.hpp">
+      <Filter>Header Files\simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="simulation_config.hpp">
+      <Filter>Header Files\simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="simulation_configurator.hpp">
+      <Filter>Header Files\simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="sparse_discrete_random_variable.hpp">
+      <Filter>Header Files\random_variables</Filter>
+    </ClInclude>
+    <ClInclude Include="random_variable_json.hpp">
+      <Filter>Header Files\random_variables</Filter>
+    </ClInclude>
+    <ClInclude Include="markov_process_json.hpp">
+      <Filter>Header Files\random_processes</Filter>
+    </ClInclude>
+    <ClInclude Include="store.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="jump_markov_process_json.hpp">
+      <Filter>Header Files\random_processes</Filter>
+    </ClInclude>
+    <ClInclude Include="local_network_type.hpp">
+      <Filter>Header Files\networks</Filter>
+    </ClInclude>
+    <ClInclude Include="enums.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="enums_json.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="host_type.hpp">
+      <Filter>Header Files\hosts</Filter>
+    </ClInclude>
+    <ClInclude Include="user.hpp">
+      <Filter>Header Files\users</Filter>
+    </ClInclude>
+    <ClInclude Include="user_environment_type.hpp">
+      <Filter>Header Files\users</Filter>
+    </ClInclude>
+    <ClInclude Include="user_config.hpp">
+      <Filter>Header Files\users</Filter>
+    </ClInclude>
+    <ClInclude Include="constant_random_variable.hpp">
+      <Filter>Header Files\random_variables</Filter>
+    </ClInclude>
+    <ClInclude Include="hasher.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="output_config.hpp">
+      <Filter>Header Files\simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="world.hpp">
+      <Filter>Header Files\simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="interpolators_json.hpp">
+      <Filter>Header Files\interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="sysadmin_config.hpp">
+      <Filter>Header Files\hosts</Filter>
+    </ClInclude>
+    <ClInclude Include="monotonic_piecewise_constant_interpolator1d.hpp">
+      <Filter>Header Files\interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="monotonicity.hpp">
+      <Filter>Header Files\interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="stl_formatters.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="monotonic_continuous_interpolator1d.hpp">
+      <Filter>Header Files\interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="host_config.hpp">
+      <Filter>Header Files\hosts</Filter>
+    </ClInclude>
+    <ClInclude Include="software_vendor.hpp">
+      <Filter>Header Files\software</Filter>
+    </ClInclude>
+    <ClInclude Include="software_vendor_config.hpp">
+      <Filter>Header Files\software</Filter>
+    </ClInclude>
+    <ClInclude Include="software.hpp">
+      <Filter>Header Files\software</Filter>
+    </ClInclude>
+    <ClInclude Include="antivirus.hpp">
+      <Filter>Header Files\software</Filter>
+    </ClInclude>
+    <ClInclude Include="software_vendor_config_json.hpp">
+      <Filter>Header Files\software</Filter>
+    </ClInclude>
+    <ClInclude Include="antivirus_config.hpp">
+      <Filter>Header Files\software</Filter>
+    </ClInclude>
+    <ClInclude Include="version.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="data_storage_format.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="server.hpp">
+      <Filter>Header Files\hosts</Filter>
+    </ClInclude>
+    <ClInclude Include="local_network_config.hpp">
+      <Filter>Header Files\networks</Filter>
+    </ClInclude>
+    <ClInclude Include="sinkhole_data_point.hpp">
+      <Filter>Header Files\botnet</Filter>
+    </ClInclude>
+    <ClInclude Include="constant_interpolator1d.hpp">
+      <Filter>Header Files\interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="botnet_dropper_config.hpp">
+      <Filter>Header Files\botnet</Filter>
+    </ClInclude>
+    <ClInclude Include="botnet_payload_config.hpp">
+      <Filter>Header Files\botnet</Filter>
+    </ClInclude>
+    <ClInclude Include="local_network_factory.hpp">
+      <Filter>Header Files\networks</Filter>
+    </ClInclude>
+    <ClInclude Include="id_factory.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="n6_data_point.hpp">
+      <Filter>Header Files\botnet</Filter>
+    </ClInclude>
+    <ClInclude Include="n6.hpp">
+      <Filter>Header Files\botnet</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="schedule.cpp">
+      <Filter>Source Files\date_time</Filter>
+    </ClCompile>
+    <ClCompile Include="rng.cpp">
+      <Filter>Source Files\random</Filter>
+    </ClCompile>
+    <ClCompile Include="rng_impl.cpp">
+      <Filter>Source Files\random</Filter>
+    </ClCompile>
+    <ClCompile Include="host.cpp">
+      <Filter>Source Files\hosts</Filter>
+    </ClCompile>
+    <ClCompile Include="brownian_motion.cpp">
+      <Filter>Source Files\random_processes</Filter>
+    </ClCompile>
+    <ClCompile Include="poisson_process.cpp">
+      <Filter>Source Files\random_processes</Filter>
+    </ClCompile>
+    <ClCompile Include="discrete_random_variable.cpp">
+      <Filter>Source Files\random_variables</Filter>
+    </ClCompile>
+    <ClCompile Include="jump_markov_process.cpp">
+      <Filter>Source Files\random_processes</Filter>
+    </ClCompile>
+    <ClCompile Include="autoscaled_poisson_process.cpp">
+      <Filter>Source Files\random_processes</Filter>
+    </ClCompile>
+    <ClCompile Include="public_connection_static_address.cpp">
+      <Filter>Source Files\public_connection</Filter>
+    </ClCompile>
+    <ClCompile Include="simple_poisson_process.cpp">
+      <Filter>Source Files\random_processes</Filter>
+    </ClCompile>
+    <ClCompile Include="simple_autoscaled_poisson_process.cpp">
+      <Filter>Source Files\random_processes</Filter>
+    </ClCompile>
+    <ClCompile Include="host_factory.cpp">
+      <Filter>Source Files\hosts</Filter>
+    </ClCompile>
+    <ClCompile Include="unique_ip_address_pool.cpp">
+      <Filter>Source Files\ip_addresses</Filter>
+    </ClCompile>
+    <ClCompile Include="ip_address.cpp">
+      <Filter>Source Files\ip_addresses</Filter>
+    </ClCompile>
+    <ClCompile Include="public_connection_dynamic_address.cpp">
+      <Filter>Source Files\public_connection</Filter>
+    </ClCompile>
+    <ClCompile Include="laptop.cpp">
+      <Filter>Source Files\hosts</Filter>
+    </ClCompile>
+    <ClCompile Include="fixed_host.cpp">
+      <Filter>Source Files\hosts</Filter>
+    </ClCompile>
+    <ClCompile Include="mobile_host.cpp">
+      <Filter>Source Files\hosts</Filter>
+    </ClCompile>
+    <ClCompile Include="email_provider.cpp">
+      <Filter>Source Files\email</Filter>
+    </ClCompile>
+    <ClCompile Include="email_account.cpp">
+      <Filter>Source Files\email</Filter>
+    </ClCompile>
+    <ClCompile Include="pausing_jump_markov_process.cpp">
+      <Filter>Source Files\random_processes</Filter>
+    </ClCompile>
+    <ClCompile Include="internet_service_provider.cpp">
+      <Filter>Source Files\public_connection</Filter>
+    </ClCompile>
+    <ClCompile Include="local_network.cpp">
+      <Filter>Source Files\networks</Filter>
+    </ClCompile>
+    <ClCompile Include="botnet_config.cpp">
+      <Filter>Source Files\botnet</Filter>
+    </ClCompile>
+    <ClCompile Include="botnet.cpp">
+      <Filter>Source Files\botnet</Filter>
+    </ClCompile>
+    <ClCompile Include="date_time.cpp">
+      <Filter>Source Files\date_time</Filter>
+    </ClCompile>
+    <ClCompile Include="action_interval.cpp">
+      <Filter>Source Files\botnet</Filter>
+    </ClCompile>
+    <ClCompile Include="own_time_counter.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="bot_state.cpp">
+      <Filter>Source Files\botnet</Filter>
+    </ClCompile>
+    <ClCompile Include="sinkhole.cpp">
+      <Filter>Source Files\botnet</Filter>
+    </ClCompile>
+    <ClCompile Include="log.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="operating_system_type.cpp">
+      <Filter>Source Files\software</Filter>
+    </ClCompile>
+    <ClCompile Include="context.cpp">
+      <Filter>Source Files\simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="simulation_controller.cpp">
+      <Filter>Source Files\simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="world.cpp">
+      <Filter>Source Files\simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="simulation_config.cpp">
+      <Filter>Source Files\simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="simulation_configurator.cpp">
+      <Filter>Source Files\simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="exceptions.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="jump_markov_process_json.cpp">
+      <Filter>Source Files\random_processes</Filter>
+    </ClCompile>
+    <ClCompile Include="json.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="operating_system.cpp">
+      <Filter>Source Files\software</Filter>
+    </ClCompile>
+    <ClCompile Include="user.cpp">
+      <Filter>Source Files\users</Filter>
+    </ClCompile>
+    <ClCompile Include="user_config.cpp">
+      <Filter>Source Files\users</Filter>
+    </ClCompile>
+    <ClCompile Include="output_config.cpp">
+      <Filter>Source Files\simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="sysadmin.cpp">
+      <Filter>Source Files\hosts</Filter>
+    </ClCompile>
+    <ClCompile Include="sysadmin_config.cpp">
+      <Filter>Source Files\hosts</Filter>
+    </ClCompile>
+    <ClCompile Include="host_config.cpp">
+      <Filter>Source Files\hosts</Filter>
+    </ClCompile>
+    <ClCompile Include="antivirus.cpp">
+      <Filter>Source Files\software</Filter>
+    </ClCompile>
+    <ClCompile Include="antivirus_config.cpp">
+      <Filter>Source Files\software</Filter>
+    </ClCompile>
+    <ClCompile Include="required_versions.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="data_storage_format.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="host_type.cpp">
+      <Filter>Source Files\hosts</Filter>
+    </ClCompile>
+    <ClCompile Include="local_network_config.cpp">
+      <Filter>Source Files\networks</Filter>
+    </ClCompile>
+    <ClCompile Include="sinkhole_data_point.cpp">
+      <Filter>Source Files\botnet</Filter>
+    </ClCompile>
+    <ClCompile Include="botnet_dropper_config.cpp">
+      <Filter>Source Files\botnet</Filter>
+    </ClCompile>
+    <ClCompile Include="botnet_payload_config.cpp">
+      <Filter>Source Files\botnet</Filter>
+    </ClCompile>
+    <ClCompile Include="id.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="local_network_factory.cpp">
+      <Filter>Source Files\networks</Filter>
+    </ClCompile>
+    <ClCompile Include="n6_data_point.cpp">
+      <Filter>Source Files\botnet</Filter>
+    </ClCompile>
+    <ClCompile Include="n6.cpp">
+      <Filter>Source Files\botnet</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>

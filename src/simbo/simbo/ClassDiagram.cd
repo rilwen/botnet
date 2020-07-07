@@ -1,0 +1,914 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="simbo::UniqueIpAddressPool&lt;Addr&gt;" Collapsed="true">
+    <Position X="11.5" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EAQIEAAIAAIQAAAAAAAAAABAAAAAgAAAAACAIAAIAAA=</HashCode>
+      <FileName>unique_ip_address_pool.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::Schedule" Collapsed="true">
+    <Position X="42.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAgEAAAAAAAAAIAIAAAABAAkAAABQAAABgAAAACAA=</HashCode>
+      <FileName>schedule.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::MonotonicContinuousInterpolator1D&lt;RealX, RealY&gt;" Collapsed="true">
+    <Position X="13.25" Y="19.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>monotonic_continuous_interpolator1d.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::MonotonicPiecewiseConstantInterpolator1D&lt;RealX, RealY&gt;" Collapsed="true">
+    <Position X="9" Y="21.25" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAhAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>monotonic_piecewise_constant_interpolator1d.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::IndexedInterpolator1D&lt;RealX, ValueY&gt;" Collapsed="true">
+    <Position X="1.75" Y="18.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAgAIAQAAAAAAIMAAAACCAAAAAAAAA=</HashCode>
+      <FileName>indexed_interpolator1d.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::Interpolator1D&lt;RealX, RealY&gt;" Collapsed="true">
+    <Position X="8.25" Y="17" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAEIAAAAAAAAIIAAAAACAgACAAAAA=</HashCode>
+      <FileName>interpolator1d.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::Interpolator1DImpl&lt;RealX, RealY&gt;" Collapsed="true">
+    <Position X="7.75" Y="18.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAIAAAAAAAABIAGAAACAgAAAAMAA=</HashCode>
+      <FileName>interpolator1d_impl.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::LinearInterpolator1D&lt;RealX, RealY&gt;" Collapsed="true">
+    <Position X="9.75" Y="19.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAQAAAAABAAA=</HashCode>
+      <FileName>linear_interpolator1d.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::MonotonicInterpolator1D&lt;RealX, RealY&gt;" Collapsed="true">
+    <Position X="13.5" Y="18.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>monotonic_interpolator1d.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::MonotonicLinearInterpolator1D&lt;RealX, RealY&gt;" Collapsed="true">
+    <Position X="11.75" Y="23.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAIAABAAAQAAEAAgAAAAAAAAAAAgAAAAAEAAAA=</HashCode>
+      <FileName>monotonic_linear_interpolator1d.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::PiecewiseConstantInterpolator1D&lt;RealX, RealY&gt;" Collapsed="true">
+    <Position X="5.5" Y="19.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAABAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>piecewise_constant_interpolator1d.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::Cycle&lt;T&gt;" Collapsed="true">
+    <Position X="44" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAEAACAAAAAAAAAAAACAAAEAAAAAAAAAAYCAAA=</HashCode>
+      <FileName>cycle.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::RNG" Collapsed="true">
+    <Position X="0.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAABAAAAEAQAgAAAAAAAQAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>rng.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::RNGImpl" Collapsed="true">
+    <Position X="0.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAQAAAAQAgAEAAAAAQAAAAAAAQIAAAAAAAAA=</HashCode>
+      <FileName>rng_impl.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::AutoscaledPoissonProcess" Collapsed="true">
+    <Position X="5" Y="9.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAQAACAAAAAACAAAAAAgAAAAAA=</HashCode>
+      <FileName>autoscaled_poisson_process.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::BrownianMotion" Collapsed="true">
+    <Position X="15.75" Y="8.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAIQAABAAAAQAACAAAAAQAAAAAAAAIAAAAA=</HashCode>
+      <FileName>brownian_motion.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::CastMarkovProcess&lt;Visible, Hidden&gt;" Collapsed="true">
+    <Position X="21.25" Y="8.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIQAAAgAAAQAACAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>cast_markov_process.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::ConditionalMarkovProcess&lt;State, Parameter&gt;" Collapsed="true">
+    <Position X="18.75" Y="17" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAMAAAAAAAAQAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>conditional_markov_process.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::ConditionalMarkovProcessImpl&lt;State, Parameter&gt;" Collapsed="true">
+    <Position X="18.5" Y="18.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAIAAAAAAAAQAACAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>conditional_markov_process_impl.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::ConstantProcess&lt;State&gt;" Collapsed="true">
+    <Position X="28.25" Y="8.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIQAAAEAAAQAACAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>constant_process.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::DiscreteMarkovProcessDiscreteTime&lt;State&gt;" Collapsed="true">
+    <Position X="31" Y="8.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIQBAAAAAAQACCAAAABAAAAAEAAAIAAAAA=</HashCode>
+      <FileName>discrete_markov_process_discrete_time.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::MarkovProcessState&lt;V&gt;" Collapsed="true">
+    <Position X="3.5" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAMAAQAAAAAAAAAAAAAAAAAAAAAAAAAACAAgAA=</HashCode>
+      <FileName>markov_process_state.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::MarkovSwitcher&lt;V&gt;" Collapsed="true">
+    <Position X="37" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAIAkAAAgAAAAQAAAAAAACEACAgAAAgAAAEAAA=</HashCode>
+      <FileName>markov_switcher.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::PausingJumpMarkovProcess" Collapsed="true">
+    <Position X="2" Y="8.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAIRAABAAAAQQACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>pausing_jump_markov_process.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::JumpMarkovProcess" Collapsed="true">
+    <Position X="9" Y="8.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAIQAAAAAAAAAAAAAAAAAABAAAAAgAAAAAA=</HashCode>
+      <FileName>jump_markov_process.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::MarkovProcess&lt;State&gt;" Collapsed="true">
+    <Position X="17" Y="7" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAIQAAAAAAAQgACAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>markov_process.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::PoissonProcess" Collapsed="true">
+    <Position X="7.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIBAAAAAAAAAAAAAAAAQAACAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>poisson_process.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::PredeterminedProcess&lt;State&gt;" Collapsed="true">
+    <Position X="18.25" Y="8.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIQCAAAAAAQAACAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>predetermined_process.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::SemiPredeterminedProcess&lt;State&gt;" Collapsed="true">
+    <Position X="24.75" Y="8.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAIIRAAAAAAAwAACAAAQEgAAAAAgQAAAAAAA=</HashCode>
+      <FileName>semi_predetermined_process.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::SimpleAutoscaledPoissonProcess" Collapsed="true">
+    <Position X="10" Y="9.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAhAAAAAQAACAACAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>simple_autoscaled_poisson_process.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::SimplePoissonProcess" Collapsed="true">
+    <Position X="13.25" Y="9.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAhAAAAAQIACAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>simple_poisson_process.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::ConstantRandomVariable&lt;T&gt;" Collapsed="true">
+    <Position X="0.75" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAACAAAAAIAAAAAAA=</HashCode>
+      <FileName>constant_random_variable.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::DiscreteRandomVariable" Collapsed="true">
+    <Position X="3.75" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAIEAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAgCAAIAEA=</HashCode>
+      <FileName>discrete_random_variable.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::SparseDiscreteRandomVariable&lt;T&gt;" Collapsed="true">
+    <Position X="6.5" Y="2.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AIAAEAABAAAAAAAAEAAAAAAAAAAEAAgABQAAAAAAAAA=</HashCode>
+      <FileName>sparse_discrete_random_variable.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::RandomVariable&lt;T&gt;" Collapsed="true">
+    <Position X="4.25" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>random_variable.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::IpAddress" Collapsed="true">
+    <Position X="44" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABABAAAAAAAAAIACAgAAAAEAAAABAAAAgAAAAAAA=</HashCode>
+      <FileName>ip_address.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::IpAddressPool" Collapsed="true">
+    <Position X="12" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAwAEAAAAAAQAIAAAAAAAgAAAAAAgAAAAACAAAAEAAA=</HashCode>
+      <FileName>ip_address_pool.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::InternetServiceProvider" Collapsed="true">
+    <Position X="14.75" Y="2.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAECBgAAAAAAAAA=</HashCode>
+      <FileName>internet_service_provider.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::PublicConnection" Collapsed="true">
+    <Position X="14.25" Y="12.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAEAAAAAAAAAAAAAAIAAEAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>public_connection.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::PublicConnectionDynamicAddress" Collapsed="true">
+    <Position X="13.25" Y="13.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAIAACAAAAAAAAAAAAAAIAAEAgEAAAAAAAAAAAA=</HashCode>
+      <FileName>public_connection_dynamic_address.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::PublicConnectionStaticAddress" Collapsed="true">
+    <Position X="16.5" Y="13.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAQACAAAAAAAAAAAAAAIAAEAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>public_connection_static_address.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::Context" Collapsed="true">
+    <Position X="42.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAIAADgAAQAAAGIAAKBIAAAAAAABAhAAwAIAADAA=</HashCode>
+      <FileName>context.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::EmailProvider" Collapsed="true">
+    <Position X="38.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAgAAAAAAAACAAAIAAAAAAAAAAAAAIAAIAA=</HashCode>
+      <FileName>email_provider.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::Host" Collapsed="true">
+    <Position X="21.5" Y="12.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>sTAAoGMEUhAEIwAUwAAAVCAEAkAmiokAABEgQBDkQiA=</HashCode>
+      <FileName>host.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::LocalNetwork" Collapsed="true">
+    <Position X="26.5" Y="12.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAMACAEAAAAEAQAQAAAAABAAAEAgBBAQAAAQgA=</HashCode>
+      <FileName>local_network.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::User" Collapsed="true">
+    <Position X="44" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAABAAAQEAAAAACCFAEQAgAIAAICAAAACEBgAAAhaAA=</HashCode>
+      <FileName>user.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::EmailAccount" Collapsed="true">
+    <Position X="37" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASgAAAAAAAAACBCAEQAAAAAIBABABAAGAAgAIAoAEg=</HashCode>
+      <FileName>email_account.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::HostFactory" Collapsed="true">
+    <Position X="40.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAEAAAAAAAAACAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>host_factory.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::Server" Collapsed="true">
+    <Position X="19.75" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>server.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::Desktop" Collapsed="true">
+    <Position X="22" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>desktop.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::FixedHost" Collapsed="true">
+    <Position X="20.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAEAAAAAAAAAAABAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>fixed_host.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::Botnet" Collapsed="true">
+    <Position X="37" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAohEAEBAAAAEAAAIAQAAEACAAABAEAgAggACAEBAA=</HashCode>
+      <FileName>botnet.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::Passkey&lt;T&gt;" Collapsed="true">
+    <Position X="40.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>passkey.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::Sysadmin" Collapsed="true">
+    <Position X="22.5" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAgAAAAAAQAAAEAAABABAAAgAAAAAAAAAA=</HashCode>
+      <FileName>sysadmin.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::OperatingSystem" Collapsed="true">
+    <Position X="3.5" Y="12.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAACAAEAAAAIAIACAAAAA=</HashCode>
+      <FileName>operating_system.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::Laptop" Collapsed="true">
+    <Position X="24.25" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAgAAAAAAAgAAAQQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>laptop.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::MobileHost" Collapsed="true">
+    <Position X="24.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAgBEACAAAAAAAAAAAAAAAAAEAEAAAAAAAAAgAAA=</HashCode>
+      <FileName>mobile_host.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::NetworkAdmin" Collapsed="true">
+    <Position X="19" Y="2.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAgAAADA=</HashCode>
+      <FileName>network_admin.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::LocalNetworkFactory" Collapsed="true">
+    <Position X="35.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>local_network_factory.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::ActionInterval" Collapsed="true">
+    <Position X="35.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAACABAAAAAAAAAAAAAAAAAEEgAAAAAAA=</HashCode>
+      <FileName>action_interval.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::Antivirus" Collapsed="true">
+    <Position X="9.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBEAAAAAAQBQAAAAgAAAAgAACCAAQAAAAAAAAAAAKAA=</HashCode>
+      <FileName>antivirus.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::Sinkhole" Collapsed="true">
+    <Position X="37" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAIIAUAIAAAAAAAAAEgEAAAAAAAAAEAAQQBCAAAAA=</HashCode>
+      <FileName>sinkhole.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::IdFactory" Collapsed="true">
+    <Position X="42.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>id_factory.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::Store&lt;T&gt;" Collapsed="true">
+    <Position X="40.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAIAAQAACAAAAAAAAAAAAAAAKAAA=</HashCode>
+      <FileName>store.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::ConstView&lt;C&gt;" Collapsed="true">
+    <Position X="40.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>const_view.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::BaseContainerConstView&lt;C&gt;" Collapsed="true">
+    <Position X="7.5" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAIAAAAACAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>const_view.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::ConstView&lt;std::vector&lt;T*&gt;&gt;" Collapsed="true">
+    <Position X="7.5" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAABAAAAAAAAAAAAAAAAEAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>const_view.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::DeserialisationError" Collapsed="true">
+    <Position X="35.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAQAAAAIAAAAAAEAAAAAABACABAAAAAAAAA=</HashCode>
+      <FileName>exceptions.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::ConfigurationError" Collapsed="true">
+    <Position X="38.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAEAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAggA=</HashCode>
+      <FileName>exceptions.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::OwnTimeCounter" Collapsed="true">
+    <Position X="38.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAIAAAACAAAAAAAAAAAAAAAAAAAAgAAQEAAI=</HashCode>
+      <FileName>own_time_counter.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::TrackedValue&lt;V&gt;" Collapsed="true">
+    <Position X="2.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAIAgAAAgAAAAABAQAAAAAAACAAAQAgAAAEAAA=</HashCode>
+      <FileName>tracked_value.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::TrackedValueOwnTime&lt;V&gt;" Collapsed="true">
+    <Position X="0.5" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAABAQAAEAAQAAgAAACAAAAAAgAAAEAAA=</HashCode>
+      <FileName>tracked_value_own_time.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::ObjectManager&lt;O, M&gt;" Collapsed="true">
+    <Position X="18.75" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAkAAAA=</HashCode>
+      <FileName>object_manager.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::ManagedObject&lt;O, M&gt;" Collapsed="true">
+    <Position X="20.25" Y="11" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAEAAIAAAAAAAAAAAAAwAAAAAAA=</HashCode>
+      <FileName>managed_object.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::TimestampedValue&lt;V&gt;" Collapsed="true">
+    <Position X="42.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAgAACAAAAAAQACAAAQAgAAAkAAA=</HashCode>
+      <FileName>timestamped_value.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::SimulationController" Collapsed="true">
+    <Position X="35.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAEgAAAAAAAAAAAAQAAAgAAABgBAQAAgAAgAAABAA=</HashCode>
+      <FileName>simulation_controller.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::World" Collapsed="true">
+    <Position X="35.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIYgQIQIABBAYAAQACAAAqAQAAAQEgAAAAAgAACEDAo=</HashCode>
+      <FileName>world.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::SimulationConfigurator" Collapsed="true">
+    <Position X="44" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AKAEAAAoQACIBCoAEEEAQBABAAAAEIAAgAIAAwAAAAg=</HashCode>
+      <FileName>simulation_configurator.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::Android" Collapsed="true">
+    <Position X="0.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>android.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::Software&lt;Spec&gt;" Collapsed="true">
+    <Position X="5.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAGAEAAAAAAAAIAgAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>software.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::SoftwareVendor&lt;Spec&gt;" Collapsed="true">
+    <Position X="38.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAFAEAAAAAAAAAAAAAECAAAAAAAAAAAAAAAAIAAIAA=</HashCode>
+      <FileName>software_vendor.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::Linux" Collapsed="true">
+    <Position X="3" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>linux.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::MacOs" Collapsed="true">
+    <Position X="5.25" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>macos.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::Unix" Collapsed="true">
+    <Position X="4.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>unix.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="simbo::Windows" Collapsed="true">
+    <Position X="7.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAACAAAAA=</HashCode>
+      <FileName>windows.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="simbo::EnumNames&lt;Monotonicity&gt;" Collapsed="true">
+    <Position X="42.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>monotonicity.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::HostConfig" Collapsed="true">
+    <Position X="42.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>host_config.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::EnumNames&lt;HostType&gt;" Collapsed="true">
+    <Position X="38.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>host_type.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::BotnetConfig" Collapsed="true">
+    <Position X="38.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAABEAAAAAAIAAAAABAAAEAAAAAAoACAA=</HashCode>
+      <FileName>botnet_config.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::EnumNames&lt;ActivityState&gt;" Collapsed="true">
+    <Position X="37" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>activity_state.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::EnumNames&lt;InfectionState&gt;" Collapsed="true">
+    <Position X="35.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>infection_state.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::SysadminConfig" Collapsed="true">
+    <Position X="37" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>sysadmin_config.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::EnumNames&lt;LocalNetworkType&gt;" Collapsed="true">
+    <Position X="44" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>local_network_type.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::LocalNetworkConfig" Collapsed="true">
+    <Position X="44" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIgAAAAAAAAADAAgQAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>local_network_config.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::BotnetDropperConfig" Collapsed="true">
+    <Position X="40.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAQAAAAAAAAEAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>botnet_dropper_config.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::BotnetPayloadConfig" Collapsed="true">
+    <Position X="42.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAIADAAAAAAAAAAAAAIAAAAgAAAAAAAIwAAAAAAA=</HashCode>
+      <FileName>botnet_payload_config.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::EnumNames&lt;BotState&gt;" Collapsed="true">
+    <Position X="40.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bot_state.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::SinkholeDataPoint&lt;Version&gt;" Collapsed="true">
+    <Position X="38.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>sinkhole_data_point.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::SinkholeDataPoint&lt;1&gt;" Collapsed="true">
+    <Position X="44" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABBAAEAAAAAAABAAAAAAAAAAAAEAAAAAAkAEAAAAA=</HashCode>
+      <FileName>sinkhole_data_point.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::SinkholeDataPoint&lt;2&gt;" Collapsed="true">
+    <Position X="40.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABBAAEAAAAAAAAAAAAAAAAAAAAEAACAAAkAEAAAAA=</HashCode>
+      <FileName>sinkhole_data_point.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::SinkholeDataPoint&lt;3&gt;" Collapsed="true">
+    <Position X="42.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABBAAEAAAAAAABAAABAAAAAAAAEAACAAAkAEAAAAA=</HashCode>
+      <FileName>sinkhole_data_point.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::EnumNames&lt;DataStorageFormat&gt;" Collapsed="true">
+    <Position X="37" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>data_storage_format.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::EnumNames&lt;E&gt;" Collapsed="true">
+    <Position X="35.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>enums.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::Hasher" Collapsed="true">
+    <Position X="40.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>hasher.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::OutputConfig" Collapsed="true">
+    <Position X="35.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAgAAAAAAAAAAAAAAIAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>output_config.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::SimulationConfig" Collapsed="true">
+    <Position X="37" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AADgAIAAAEAAAAAAAAAAAAAAAAAAAAEAAAQAAAAgAAA=</HashCode>
+      <FileName>simulation_config.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::UserConfig" Collapsed="true">
+    <Position X="38.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAABIAAAgCABgAABAAAFAAEAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>user_config.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::EnumNames&lt;UserEnvironmentType&gt;" Collapsed="true">
+    <Position X="44" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>user_environment_type.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::AntivirusConfig" Collapsed="true">
+    <Position X="37" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAIAAAABAAAIAAAAAAAAAAABAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>antivirus_config.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::SoftwareVendorConfig&lt;Spec&gt;" Collapsed="true">
+    <Position X="35.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIACAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>software_vendor_config.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="simbo::EnumNames&lt;OperatingSystemType&gt;" Collapsed="true">
+    <Position X="38.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>operating_system_type.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="nlohmann::adl_serializer&lt;simbo::Schedule&gt;" Collapsed="true">
+    <Position X="35.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>schedule.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="simbo::DateTime" Collapsed="true">
+    <Position X="37" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>date_time.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="simbo::Date" Collapsed="true">
+    <Position X="35.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>date_time.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="simbo::TimeDuration" Collapsed="true">
+    <Position X="35.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>date_time.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="simbo::seconds_t" Collapsed="true">
+    <Position X="44" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>date_time.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="simbo::UniqueIpAddressPoolV4" Collapsed="true">
+    <Position X="10" Y="0.5" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>unique_ip_address_pool.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="simbo::UniqueIpAddressPoolV6" Collapsed="true">
+    <Position X="15" Y="5.5" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>unique_ip_address_pool.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="simbo::Id::id_t" Collapsed="true">
+    <Position X="38.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>id.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="simbo::os_spec_t" Collapsed="true">
+    <Position X="42.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>operating_system.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="simbo::os_full_spec_t" Collapsed="true">
+    <Position X="40.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>operating_system.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="simbo::Monotonicity" Collapsed="true">
+    <Position X="35.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAGAAAAAAAAAAQAAAAAAAAAAIgAAAAAAAAAAAAg=</HashCode>
+      <FileName>monotonicity.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="simbo::HostType" Collapsed="true">
+    <Position X="40.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAQAAAAAA=</HashCode>
+      <FileName>host_type.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="simbo::ActivityState" Collapsed="true">
+    <Position X="35.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>activity_state.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="simbo::InfectionState" Collapsed="true">
+    <Position X="42.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>infection_state.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="simbo::LocalNetworkType" Collapsed="true">
+    <Position X="44" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>local_network_type.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="simbo::BotState" Collapsed="true">
+    <Position X="37" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAAIAAAAggAAA=</HashCode>
+      <FileName>bot_state.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="simbo::DataStorageFormat" Collapsed="true">
+    <Position X="38.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAECA=</HashCode>
+      <FileName>data_storage_format.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="simbo::OperatingSystemType" Collapsed="true">
+    <Position X="37" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAABAAAAEAAAAQAEAAAA=</HashCode>
+      <FileName>operating_system_type.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="simbo::UserEnvironmentType" Collapsed="true">
+    <Position X="38.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAQAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>user_environment_type.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

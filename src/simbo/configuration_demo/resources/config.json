@@ -1,0 +1,456 @@
+{
+	"schedule": {
+		"start": {
+			"date": "2018-08-01",
+			"time": {
+				"hours": 10
+			}
+		},
+		"period": {
+			"minutes": 20
+		},
+		"nbr_points": 720
+	},
+	"botnet_config": {
+		"dropper": {
+			"setting_up_period": 300,
+			"max_infected_release": [[["WINDOWS", 7], 14]]
+		},
+		"payload": {
+			"xs": [1, 2],
+			"ys": [
+				{
+					"ping_interval": {
+						"period": 600,
+						"by_wall_clock": true
+					},
+					"reconfiguration_interval": {
+						"period": 7200,
+						"by_wall_clock": false
+					},		
+					"ping_at_start": true,
+					"reconfigure_at_start": true,
+					"infectious_emails_sent_per_second_per_bot": 0.001,
+					"min_detecting_av_release": {
+						"McCoffeeAV": 2,
+						"KGBTote": 2
+					}
+				},
+				{
+					"ping_interval": {
+						"period": 600,
+						"by_wall_clock": true
+					},
+					"reconfiguration_interval": {
+						"period": 7200,
+						"by_wall_clock": false
+					},		
+					"ping_at_start": true,
+					"reconfigure_at_start": true,
+					"infectious_emails_sent_per_second_per_bot": 0.002,
+					"min_detecting_av_release": {
+						"McCoffeeAV": 4,
+						"KGBTote": 2
+					}
+				}
+			]
+		},		
+		"probability_of_reconfiguration": 0.05,
+		"bot_state_weights": {
+			"xs": ["2018-08-01", "2018-08-04"],
+			"ys": [{"values": ["PROPAGATING", "WORKING", "DORMANT"],
+					"weights": [0.2, 0.5, 0.3]},
+					{"values": ["PROPAGATING", "WORKING", "DORMANT"],
+					"weights": [0.05, 0.8, 0.15]}]
+		},		
+		"infectious_email_sent_per_second_by_command_centre": {
+			"xs": ["2018-08-01", "2018-08-04"],
+			"ys": [1, 0.1]
+		},
+		"email_address_list_size": 1000,
+		"payload_release_schedule": {
+			"xs": ["2018-01-01", "2018-01-02"],
+			"ys": [1, 2]
+		}
+	},
+	"simulation_config": {
+		"random_seed": 4598120042,
+		"local_network_configs": [
+			{
+				"typ": "HOUSEHOLD",
+				"count": 80,
+				"sysadmin_config": {
+					"maintenance_triggers": {
+						"weights": [0.8, 0.2],
+						"values": [
+							{
+								"base_process": {"type": "poisson", "subtype": "simple", "params": {"inverse_lambda": {"hours": 168}}},
+								"pause_length": {"hours": 168}
+							},
+							{
+								"base_process": {"type": "poisson", "subtype": "simple", "params": {"inverse_lambda": {"hours": 24}}},
+								"pause_length": {"hours": 24}
+							}
+						]
+					}
+				},
+				"fixed_hosts": [
+					["DESKTOP", [{
+						"operating_system": {
+							"values": [[["WINDOWS", 7], 12], [["WINDOWS", 8], 2], [["WINDOWS", 10], 4], [["LINUX", 24], 1]],
+							"weights": [0.15, 0.05, 0.7, 0.1]
+						},
+						"antivirus": [
+							[["WINDOWS", 7], {"values": [["McCoffeeAV", 1], ["KGBTote", 1], ["", 0]], "weights": [0.8, 0.1, 0.1]}],
+							[["WINDOWS", 8], {"values": [["McCoffeeAV", 1], ["KGBTote", 1], ["", 0]], "weights": [0.75, 0.15, 0.1]}],
+							[["WINDOWS", 10], {"values": [["McCoffeeAV", 1], ["KGBTote", 1], ["", 0]], "weights": [0.8, 0.15, 0.05]}]
+						]
+					}, 1]]
+				],
+				"allowed_users": ["OFFICE_WORKER", "HOME_USER", "ROAD_WARRIOR"],
+				"country": 1
+			},
+			{
+				"typ": "HOUSEHOLD",
+				"count": 15,
+				"sysadmin_config": {
+					"maintenance_triggers": {
+						"weights": [0.8, 0.2],
+						"values": [
+							{
+								"base_process": {"type": "poisson", "subtype": "simple", "params": {"inverse_lambda": {"hours": 168}}},
+								"pause_length": {"hours": 168}
+							},
+							{
+								"base_process": {"type": "poisson", "subtype": "simple", "params": {"inverse_lambda": {"hours": 24}}},
+								"pause_length": {"hours": 24}
+							}
+						]
+					}
+				},
+				"fixed_hosts": [
+					["DESKTOP", [{
+						"operating_system": {
+							"values": [[["WINDOWS", 7], 12], [["WINDOWS", 8], 2], [["WINDOWS", 10], 4], [["LINUX", 24], 1]],
+							"weights": [0.15, 0.05, 0.7, 0.1]
+						},
+						"antivirus": [
+							[["WINDOWS", 7], {"values": [["McCoffeeAV", 1], ["KGBTote", 1], ["", 0]], "weights": [0.8, 0.1, 0.1]}],
+							[["WINDOWS", 8], {"values": [["McCoffeeAV", 1], ["KGBTote", 1], ["", 0]], "weights": [0.75, 0.15, 0.1]}],
+							[["WINDOWS", 10], {"values": [["McCoffeeAV", 1], ["KGBTote", 1], ["", 0]], "weights": [0.8, 0.15, 0.05]}]
+						]
+					}, 2]]
+				],
+				"allowed_users": ["OFFICE_WORKER", "HOME_USER", "ROAD_WARRIOR"],
+				"country": 1
+			},
+			{
+				"typ": "HOUSEHOLD",
+				"count": 5,
+				"sysadmin_config": {
+					"maintenance_triggers": {
+						"weights": [0.8, 0.2],
+						"values": [
+							{
+								"base_process": {"type": "poisson", "subtype": "simple", "params": {"inverse_lambda": {"hours": 168}}},
+								"pause_length": {"hours": 168}
+							},
+							{
+								"base_process": {"type": "poisson", "subtype": "simple", "params": {"inverse_lambda": {"hours": 24}}},
+								"pause_length": {"hours": 24}
+							}
+						]
+					}
+				},
+				"fixed_hosts": [
+					["DESKTOP", [{
+						"operating_system": {
+							"values": [[["WINDOWS", 7], 12], [["WINDOWS", 8], 2], [["WINDOWS", 10], 4], [["LINUX", 24], 1]],
+							"weights": [0.15, 0.05, 0.7, 0.1]
+						},
+						"antivirus": [
+							[["WINDOWS", 7], {"values": [["McCoffeeAV", 1], ["KGBTote", 1], ["", 0]], "weights": [0.8, 0.1, 0.1]}],
+							[["WINDOWS", 8], {"values": [["McCoffeeAV", 1], ["KGBTote", 1], ["", 0]], "weights": [0.75, 0.15, 0.1]}],
+							[["WINDOWS", 10], {"values": [["McCoffeeAV", 1], ["KGBTote", 1], ["", 0]], "weights": [0.8, 0.15, 0.05]}]
+						]
+					}, 3]]
+				],
+				"allowed_users": ["OFFICE_WORKER", "HOME_USER", "ROAD_WARRIOR"],
+				"country": 1
+			},
+			{
+				"typ": "CORPORATE",
+				"count": 10,
+				"sysadmin_config": {
+					"maintenance_triggers": {
+						"weights": [1],
+						"values": [{
+								"base_process": {"type": "poisson", "subtype": "simple", "params": {"inverse_lambda": {"hours": 24}}},
+								"pause_length": {"hours": 24}
+							}]
+					}
+				},
+				"fixed_hosts": [
+					["DESKTOP", [{
+						"operating_system": {
+							"values": [[["WINDOWS", 10], 4], [["LINUX", 24], 2]],
+							"weights": [0.7, 0.3]
+						},
+						"antivirus": [
+							[["WINDOWS", 10], {"values": [["McCoffeeAV", 1], ["KGBTote", 1]], "weights": [0.95, 0.05]}]
+						]
+					}, 7]]
+				],
+				"allowed_users": ["OFFICE_WORKER", "ROAD_WARRIOR"],
+				"country": 1
+			},
+			{
+				"typ": "CORPORATE",
+				"count": 1,
+				"sysadmin_config": {
+					"maintenance_triggers": {
+						"weights": [1],
+						"values": [{
+								"base_process": {"type": "poisson", "subtype": "simple", "params": {"inverse_lambda": {"hours": 24}}},
+								"pause_length": {"hours": 24}
+							}]
+					}
+				},
+				"fixed_hosts": [
+					["DESKTOP", [{
+						"operating_system": {
+							"values": [[["WINDOWS", 10], 4], [["LINUX", 24], 2]],
+							"weights": [0.7, 0.3]
+						},
+						"antivirus": [
+							[["WINDOWS", 10], {"values": [["McCoffeeAV", 1], ["KGBTote", 1]], "weights": [0.95, 0.05]}]
+						]
+					}, 48]],
+					["SERVER", [{
+						"operating_system": {
+							"values": [[["WINDOWS", 10], 4], [["LINUX", 24], 2]],
+							"weights": [0.4, 0.6]
+						},
+						"antivirus": [
+							[["WINDOWS", 10], {"values": [["McCoffeeAV", 1], ["KGBTote", 1]], "weights": [0.95, 0.05]}]
+						]
+					}, 2]]
+				],
+				"allowed_users": ["OFFICE_WORKER", "ROAD_WARRIOR"],
+				"country": 1
+			}
+		],
+		"public_connections_config": {
+			"dynamic_ip_lifetime": 604800,
+			"min_ip_address": "0.0.0.1",
+			"max_ip_address": "0.255.255.255"
+		},
+		"email_config": {
+			"filtering_efficiency": {
+				"houli": 0.9999,
+				"pied_piper": 0.8
+			},
+			"personal_email_provider": {
+				"weights": [0.9, 0.1],
+				"values": ["houli", "pied_piper"]
+			},
+			"corporate_email_provider": {
+				"weights": [0.98, 0.02],
+				"values": ["houli", "pied_piper"]
+			}
+		},
+		"users_config": {
+			"laptop_config": {
+				"operating_system": {
+					"values": [[["WINDOWS", 7], 12], [["WINDOWS", 8], 2], [["WINDOWS", 10], 1]],
+					"weights": [0.15, 0.05, 0.8]
+				},
+				"antivirus": [
+					[["WINDOWS", 7], {"values": [["McCoffeeAV", 1], ["", 0]], "weights": [0.95, 0.05]}],
+					[["WINDOWS", 8], {"values": [["McCoffeeAV", 1], ["", 0]], "weights": [0.95, 0.05]}],
+					[["WINDOWS", 10], {"values": [["McCoffeeAV", 1], ["", 0]], "weights": [0.95, 0.05]}]
+				]
+			},
+			"laptop_sysadmin_config": {
+				"maintenance_triggers": {
+					"weights": [0.7, 0.3],
+					"values": [
+						{
+							"base_process": {"type": "poisson", "subtype": "simple", "params": {"inverse_lambda": {"hours": 168}}},
+							"pause_length": {"hours": 168}
+						},
+						{
+							"base_process": {"type": "poisson", "subtype": "simple", "params": {"inverse_lambda": {"hours": 24}}},
+							"pause_length": {"hours": 24}
+						}
+					]
+				}
+			},
+			"users": {
+				"OFFICE_WORKER": {
+					"count": 100,
+					"environments": ["HOME", "OFFICE", "NONE"],
+					"environment_process": {
+						"type": "semi_predetermined",
+						"subtype": "seasonal_weekly",
+						"params": {
+							"deterministic_periods_workdays": [[{"hours": 0}, {"hours": 8, "minutes": 45}], [{"hours": 9, "minutes": 10}, {"hours": 17, "minutes": 50}], [{"hours": 18}, {"hours": 19}], [{"hours": 20}, {"hours": 22}], [{"hours": 23}, {"hours": 23, "minutes": 59, "seconds": 59}]],
+							"deterministic_values_workdays": [2, 1, 2, 0, 2],
+							"deterministic_periods_weekend": [[{"hours": 0}, {"hours": 10}], [{"hours": 11}, {"hours": 21}], [{"hours": 23}, {"hours": 23, "minutes": 59, "seconds": 59}]],
+							"deterministic_values_weekend": [2, 0, 2]
+						}
+					},
+					"uses_laptop": false,
+					"personal_email_environments": ["HOME", "OFFICE"],
+					"work_email_environments": ["OFFICE"],
+					"probability_email_activated": 0.9,
+					"initial_email_opening_probability": 0.5,
+					"email_opening_probability_multiplier_exponent": 1.2,
+					"probability_instant_email_check": 0.75,
+					"personal_email_check_process": {
+						"type": "poisson",
+						"subtype": "simple",
+						"params": {
+							"inverse_lambda": 900
+						}
+					},
+					"work_email_check_process": {
+						"type": "poisson",
+						"subtype": "simple",
+						"params": {
+							"inverse_lambda": 450
+						}
+					}
+				},
+				"ROAD_WARRIOR": {
+					"count": 10,
+					"environments": ["HOME", "OFFICE", "NONE"],
+					"environment_process": {
+						"type": "semi_predetermined",
+						"subtype": "seasonal_weekly",
+						"params": {
+							"deterministic_periods_workdays": [[{"hours": 0}, {"hours": 8, "minutes": 45}], [{"hours": 9, "minutes": 10}, {"hours": 17, "minutes": 50}], [{"hours": 18}, {"hours": 19}], [{"hours": 20}, {"hours": 22}], [{"hours": 23}, {"hours": 23, "minutes": 59, "seconds": 59}]],
+							"deterministic_values_workdays": [2, 1, 2, 0, 2],
+							"deterministic_periods_weekend": [[{"hours": 0}, {"hours": 10}], [{"hours": 11}, {"hours": 21}], [{"hours": 23}, {"hours": 23, "minutes": 59, "seconds": 59}]],
+							"deterministic_values_weekend": [2, 0, 2]
+						}
+					},
+					"uses_laptop": true,
+					"personal_email_environments": ["HOME", "OFFICE"],
+					"work_email_environments": ["OFFICE", "HOME"],
+					"probability_email_activated": 0.9,
+					"initial_email_opening_probability": 0.5,
+					"email_opening_probability_multiplier_exponent": 1.2,
+					"probability_instant_email_check": 0.8,
+					"personal_email_check_process": {
+						"type": "poisson",
+						"subtype": "simple",
+						"params": {
+							"inverse_lambda": 1800
+						}
+					},
+					"work_email_check_process": {
+						"type": "poisson",
+						"subtype": "seasonal_weekly",
+						"params": {
+							"workday_lambdas": [0.002],
+							"weekend_lambdas": [0]
+						}
+					}
+				},
+				"HOME_USER": {
+					"count": 100,
+					"environments": ["HOME", "NONE"],
+					"environment_process": {
+						"type": "semi_predetermined",
+						"subtype": "seasonal_weekly",
+						"params": {
+							"deterministic_periods_workdays": [[{"hours": 0}, {"hours": 7}], [{"hours": 8}, {"hours": 21}], [{"hours": 23}, {"hours": 23, "minutes": 59, "seconds": 59}]],
+							"deterministic_values_workdays": [1, 0, 1],
+							"deterministic_periods_weekend": [[{"hours": 0}, {"hours": 10}], [{"hours": 11}, {"hours": 21}], [{"hours": 23}, {"hours": 23, "minutes": 59, "seconds": 59}]],
+							"deterministic_values_weekend": [1, 0, 1]
+						}
+					},
+					"uses_laptop": false,
+					"personal_email_environments": ["HOME"],				
+					"probability_email_activated": 0.9,
+					"initial_email_opening_probability": {
+						"type": "sparse_discrete",
+						"params": {
+							"values": [0.25, 0.75],
+							"weights": [0.5, 0.5]
+						}
+					},
+					"email_opening_probability_multiplier_exponent": 1.2,
+					"probability_instant_email_check": 0.5,
+					"personal_email_check_process": {
+						"type": "poisson",
+						"subtype": "simple",
+						"params": {
+							"inverse_lambda": 450
+						}
+					}
+				}
+			}
+		},
+		"operating_system_vendors_config": {
+			"vendors": {
+				"Miko-Sofcik": {
+					"release_schedules": [
+						[["WINDOWS", 7], {
+							"xs": ["2018-08-01", "2018-08-03"],
+							"ys": [12, 13]
+						}],
+						[["WINDOWS", 8], {
+							"xs": ["2018-08-01", "2018-10-01"],
+							"ys": [6, 7]
+						}],
+						[["WINDOWS", 10], {
+							"xs": ["2018-08-01", "2018-09-01"],
+							"ys": [4, 5]
+						}]
+					]
+				},
+				"Tux Ltd": {
+					"release_schedules": [
+						[["LINUX", 24], {
+							"xs": ["2018-08-01", "2018-08-30"],
+							"ys": [5, 6]
+						}]
+					]
+				}
+			}
+		},
+		"antiviruses_config": {
+			"vendors": {
+				"McCoffee": {
+					"release_schedules": {"McCoffeeAV": {"xs": ["2018-08-01", "2018-08-02"], "ys": [1, 3]}}
+				},
+				"KGBLabs": {
+					"release_schedules": {"KGBTote": {"xs": ["2018-08-01", "2018-08-02"], "ys": [1, 2]}}
+				}
+			},
+			"antiviruses": {
+				"McCoffeeAV": {
+					"infection_attempt_detection_probability": 0.4,
+					"update_at_startup": true,
+					"scan_at_startup": true,
+					"scan_after_update": true,
+					"scan_interval": {"minutes": 12}
+				},
+				"KGBTote": {
+					"infection_attempt_detection_probability": 0.1,
+					"update_at_startup": false,
+					"scan_at_startup": false,
+					"scan_after_update": false,
+					"scan_interval": {"minutes": 60}
+				}
+			}
+		}
+	},
+	"output_config": {
+		"sinkhole_data_filename": "sinkhole.bin",
+		"sinkhole_reduced_data_filename": "sinkhole_reduced.csv",
+		"network_structure_filename": "network_structure.csv"
+	}
+}

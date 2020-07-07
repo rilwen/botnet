@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1C162FB0-824F-4667-9630-67034A8B9FC3}</ProjectGuid>
+    <RootNamespace>symulator_botnetu</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <SccProjectName>Svn</SccProjectName>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <ProjectName>simbo</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\common_properties.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\common_properties.props" />
+    <Import Project="..\common_properties_release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\common_properties.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\common_properties.props" />
+    <Import Project="..\common_properties_release.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\libs\boost\lib64-msvc-14.0;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="action_interval.hpp" />
+    <ClInclude Include="android.hpp" />
+    <ClInclude Include="antivirus.hpp" />
+    <ClInclude Include="antivirus_config.hpp" />
+    <ClInclude Include="autoscaled_poisson_process.hpp" />
+    <ClInclude Include="botnet.hpp" />
+    <ClInclude Include="botnet_config.hpp" />
+    <ClInclude Include="botnet_dropper_config.hpp" />
+    <ClInclude Include="botnet_payload_config.hpp" />
+    <ClInclude Include="bot_state.hpp" />
+    <ClInclude Include="brownian_motion.hpp" />
+    <ClInclude Include="constant_interpolator1d.hpp" />
+    <ClInclude Include="constant_random_variable.hpp" />
+    <ClInclude Include="data_storage_format.hpp" />
+    <ClInclude Include="enums.hpp" />
+    <ClInclude Include="enums_json.hpp" />
+    <ClInclude Include="hasher.hpp" />
+    <ClInclude Include="host_config.hpp" />
+    <ClInclude Include="host_type.hpp" />
+    <ClInclude Include="id_factory.hpp" />
+    <ClInclude Include="interpolators_json.hpp" />
+    <ClInclude Include="jump_markov_process_json.hpp" />
+    <ClInclude Include="local_network_factory.hpp" />
+    <ClInclude Include="local_network_type.hpp" />
+    <ClInclude Include="monotonicity.hpp" />
+    <ClInclude Include="monotonic_continuous_interpolator1d.hpp" />
+    <ClInclude Include="monotonic_piecewise_constant_interpolator1d.hpp" />
+    <ClInclude Include="local_network_config.hpp" />
+    <ClInclude Include="n6.hpp" />
+    <ClInclude Include="n6_data_point.hpp" />
+    <ClInclude Include="output_config.hpp" />
+    <ClInclude Include="server.hpp" />
+    <ClInclude Include="sinkhole_data_point.hpp" />
+    <ClInclude Include="software.hpp" />
+    <ClInclude Include="software_vendor.hpp" />
+    <ClInclude Include="software_vendor_config.hpp" />
+    <ClInclude Include="software_vendor_config_json.hpp" />
+    <ClInclude Include="stl_formatters.hpp" />
+    <ClInclude Include="store.hpp" />
+    <ClInclude Include="cast_markov_process.hpp" />
+    <ClInclude Include="conditional_markov_process.hpp" />
+    <ClInclude Include="conditional_markov_process_impl.hpp" />
+    <ClInclude Include="constant_process.hpp" />
+    <ClInclude Include="const_view.hpp" />
+    <ClInclude Include="context.hpp" />
+    <ClInclude Include="date_time.hpp" />
+    <ClInclude Include="desktop.hpp" />
+    <ClInclude Include="discrete_markov_process_discrete_time.hpp" />
+    <ClInclude Include="cycle.hpp" />
+    <ClInclude Include="discrete_random_variable.hpp" />
+    <ClInclude Include="email_account.hpp" />
+    <ClInclude Include="email_provider.hpp" />
+    <ClInclude Include="exceptions.hpp" />
+    <ClInclude Include="fixed_host.hpp" />
+    <ClInclude Include="host.hpp" />
+    <ClInclude Include="activity_state.hpp" />
+    <ClInclude Include="host_factory.hpp" />
+    <ClInclude Include="id.hpp" />
+    <ClInclude Include="indexed_interpolator1d.hpp" />
+    <ClInclude Include="infection_state.hpp" />
+    <ClInclude Include="internet_service_provider.hpp" />
+    <ClInclude Include="interpolator1d.hpp" />
+    <ClInclude Include="interpolator1d_impl.hpp" />
+    <ClInclude Include="ip_address.hpp" />
+    <ClInclude Include="ip_address_pool.hpp" />
+    <ClInclude Include="json.hpp" />
+    <ClInclude Include="json_fwd.hpp" />
+    <ClInclude Include="log.hpp" />
+    <ClInclude Include="markov_process_json.hpp" />
+    <ClInclude Include="markov_process_state.hpp" />
+    <ClInclude Include="markov_switcher.hpp" />
+    <ClInclude Include="network_admin.hpp" />
+    <ClInclude Include="operating_system_type.hpp" />
+    <ClInclude Include="own_time_counter.hpp" />
+    <ClInclude Include="pausing_jump_markov_process.hpp" />
+    <ClInclude Include="random_variable_json.hpp" />
+    <ClInclude Include="simulation_config.hpp" />
+    <ClInclude Include="simulation_configurator.hpp" />
+    <ClInclude Include="simulation_controller.hpp" />
+    <ClInclude Include="sinkhole.hpp" />
+    <ClInclude Include="sparse_discrete_random_variable.hpp" />
+    <ClInclude Include="sysadmin_config.hpp" />
+    <ClInclude Include="tracked_value.hpp" />
+    <ClInclude Include="tracked_value_own_time.hpp" />
+    <ClInclude Include="unique_ip_address_pool.hpp" />
+    <ClInclude Include="jump_markov_process.hpp" />
+    <ClInclude Include="laptop.hpp" />
+    <ClInclude Include="linear_interpolator1d.hpp" />
+    <ClInclude Include="linux.hpp" />
+    <ClInclude Include="local_network.hpp" />
+    <ClInclude Include="macos.hpp" />
+    <ClInclude Include="managed_object.hpp" />
+    <ClInclude Include="markov_process.hpp" />
+    <ClInclude Include="mobile_host.hpp" />
+    <ClInclude Include="monotonic_interpolator1d.hpp" />
+    <ClInclude Include="monotonic_linear_interpolator1d.hpp" />
+    <ClInclude Include="object_manager.hpp" />
+    <ClInclude Include="operating_system.hpp" />
+    <ClInclude Include="passkey.hpp" />
+    <ClInclude Include="piecewise_constant_interpolator1d.hpp" />
+    <ClInclude Include="poisson_process.hpp" />
+    <ClInclude Include="predetermined_process.hpp" />
+    <ClInclude Include="public_connection.hpp" />
+    <ClInclude Include="public_connection_dynamic_address.hpp" />
+    <ClInclude Include="public_connection_static_address.hpp" />
+    <ClInclude Include="random_variable.hpp" />
+    <ClInclude Include="rng.hpp" />
+    <ClInclude Include="rng_impl.hpp" />
+    <ClInclude Include="schedule.hpp" />
+    <ClInclude Include="semi_predetermined_process.hpp" />
+    <ClInclude Include="simple_autoscaled_poisson_process.hpp" />
+    <ClInclude Include="simple_poisson_process.hpp" />
+    <ClInclude Include="sysadmin.hpp" />
+    <ClInclude Include="timestamped_value.hpp" />
+    <ClInclude Include="unix.hpp" />
+    <ClInclude Include="user.hpp" />
+    <ClInclude Include="user_config.hpp" />
+    <ClInclude Include="user_environment_type.hpp" />
+    <ClInclude Include="utils.hpp" />
+    <ClInclude Include="version.hpp" />
+    <ClInclude Include="windows.hpp" />
+    <ClInclude Include="world.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="action_interval.cpp" />
+    <ClCompile Include="antivirus.cpp" />
+    <ClCompile Include="antivirus_config.cpp" />
+    <ClCompile Include="autoscaled_poisson_process.cpp" />
+    <ClCompile Include="botnet.cpp" />
+    <ClCompile Include="botnet_config.cpp" />
+    <ClCompile Include="botnet_dropper_config.cpp" />
+    <ClCompile Include="botnet_payload_config.cpp" />
+    <ClCompile Include="bot_state.cpp" />
+    <ClCompile Include="brownian_motion.cpp" />
+    <ClCompile Include="context.cpp" />
+    <ClCompile Include="data_storage_format.cpp" />
+    <ClCompile Include="date_time.cpp" />
+    <ClCompile Include="discrete_random_variable.cpp" />
+    <ClCompile Include="email_account.cpp" />
+    <ClCompile Include="email_provider.cpp" />
+    <ClCompile Include="exceptions.cpp" />
+    <ClCompile Include="fixed_host.cpp" />
+    <ClCompile Include="host.cpp" />
+    <ClCompile Include="host_config.cpp" />
+    <ClCompile Include="host_factory.cpp" />
+    <ClCompile Include="host_type.cpp" />
+    <ClCompile Include="id.cpp" />
+    <ClCompile Include="internet_service_provider.cpp" />
+    <ClCompile Include="ip_address.cpp" />
+    <ClCompile Include="json.cpp" />
+    <ClCompile Include="jump_markov_process_json.cpp" />
+    <ClCompile Include="laptop.cpp" />
+    <ClCompile Include="local_network_config.cpp" />
+    <ClCompile Include="local_network_factory.cpp" />
+    <ClCompile Include="log.cpp" />
+    <ClCompile Include="mobile_host.cpp" />
+    <ClCompile Include="n6.cpp" />
+    <ClCompile Include="n6_data_point.cpp" />
+    <ClCompile Include="operating_system.cpp" />
+    <ClCompile Include="operating_system_type.cpp" />
+    <ClCompile Include="output_config.cpp" />
+    <ClCompile Include="own_time_counter.cpp" />
+    <ClCompile Include="pausing_jump_markov_process.cpp" />
+    <ClCompile Include="public_connection_dynamic_address.cpp" />
+    <ClCompile Include="simulation_config.cpp" />
+    <ClCompile Include="simulation_configurator.cpp" />
+    <ClCompile Include="simulation_controller.cpp" />
+    <ClCompile Include="sinkhole.cpp" />
+    <ClCompile Include="sinkhole_data_point.cpp" />
+    <ClCompile Include="sysadmin.cpp" />
+    <ClCompile Include="sysadmin_config.cpp" />
+    <ClCompile Include="unique_ip_address_pool.cpp" />
+    <ClCompile Include="jump_markov_process.cpp" />
+    <ClCompile Include="local_network.cpp" />
+    <ClCompile Include="poisson_process.cpp" />
+    <ClCompile Include="public_connection_static_address.cpp" />
+    <ClCompile Include="rng.cpp" />
+    <ClCompile Include="rng_impl.cpp" />
+    <ClCompile Include="schedule.cpp" />
+    <ClCompile Include="simple_autoscaled_poisson_process.cpp" />
+    <ClCompile Include="simple_poisson_process.cpp" />
+    <ClCompile Include="user.cpp" />
+    <ClCompile Include="user_config.cpp" />
+    <ClCompile Include="required_versions.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="world.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
